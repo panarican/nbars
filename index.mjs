@@ -1,4 +1,4 @@
-export const NBars = {
+const NBars = {
   regex: new RegExp('{{([^}]+)}}', 'g'),
   transform: function(template, objs) {
     return template.replace(this.regex,(match, prop) =>{
